@@ -3,10 +3,10 @@
 html, body {
   font-family: 'VT323', sans-serif;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  /* background-size: 100% 100%;
   position: relative;
   height:100%;
-  width: 100%;
+  width: 100%; */
 }
 
 .navbar-overlay {
@@ -27,10 +27,10 @@ a:hover {
 }
 
 #home {
-  /* background: url(sunset-lake.jpg) no-repeat center fixed; */
+  /* background: url(sunset-lake.jpg) no-repeat center fixed;
   height: 100%;
   width: 100%;
-  position: relative;
+  position: relative; */
   background-size: cover;
   padding: 500px;
 }
