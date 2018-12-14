@@ -31,17 +31,17 @@
   <nav id="theNav" class="navbar navbar-expand-sm navbar-overlay fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-      <img id="logo" src="Logo.jpg" width="160" height="88" alt="logo image">
+      <img id="logo" src="images/logo.jpg" width="160" height="88" alt="logo image">
       </a>
 
       <!-- Button for collapse and mobile device -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fa fa-navicon"> </i>
       </button>
       <!-- End button -->
 
       <div id="navContent" class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav nav-pills ml-auto">
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#profile">Profile</a>
           </li>
@@ -56,125 +56,120 @@
     </div>
   </nav>
 
-<div data-spy="scroll" data-target="#theNav">
-
-<div id="home">
-    <div class="landing-text text-black">
+<!-- Header -->
+  <div class="container-fluid" id="home">
+    <div class="landing-text text-center">
       <h1> Tess Neau </h1>
     </div>
-</div>
+  </div>
 
-  <div class="padding bg-light" id="profile">
-    <div class="container" >
+  <div class="bg-white" id="profile">
+    <div class="d-flex" style="height:40rem">
       <div class="row">
-        <div class="col-3">
+        <div class="col-2 offset-1 align-self-start">
           <div class="profile-left text-center">
-          <img src="images/profile.jpg" class="img-fluid" id="profpic">
-          <p>Tess Florence Neau <br> I'm 22, was raised on the vibrant beaches of Venice, California and recently have moved to New York to persue work as a developer.</p>
+          <img src="images/dogandI.png" class="img-fluid" id="profpic">
+          <hr>
+          <p class="text-justify"> 22 <br> Raised on the vibrant beaches of Venice, California and recently moved to Brooklyn, New York to continue work as a developer. <br> <br> B.A. Double Major: Applied Mathematics and Philosophy <br> 2018 <br> Kenyon College, Gambier, OH  </p>
           </div>
         </div>
-        <div class="col-7 offset-1 text-center">
+        <div class="col-7 offset-1 align-self-end text-center">
           <div class="profile-right">
-          <h2> Profile </h2>
-            <p class="lead">Experience in working with software and data with a demonstrated history of working in the computer development industry. Skilled in teamwork, leadership, data analysis, strategic planning, and creative problem solving. I'm a left brained professional with humanities writing skills and a Bachelor’s Degree focused in Mathematics and Philosophy from Kenyon College. I'm open-minded, effective, quick to learn and the best listener on this side of town. I'll bring fresh innovation, loyalty and a smile into any space I walk into. <br> Add carousel of pictures that represent </p>
+          <h2> get to know me </h2>
+            <p class="lead-text text-justify mt-5">Experience in working with software, data, and customer service with a demonstrated history of working in the computer development industry. Skilled in teamwork, leadership, data analysis, and creative problem solving. I'm a left brained professional with humanities writing skills. I'm open-minded, effective, quick to learn and the best listener on this side of town. I'll bring fresh innovation, loyalty and a smile into any space I walk into. <br> Add carousel of pictures that represent </p>
           </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="padding bg-light" id="projects">
+    <div class="bg-white" id="projects">
       <div class="container-fluid">
         <h2>Projects</h2>
-        <p class="lead-text">Projects that I've worked on for clients and on personal time</p>
-
-          <div class="row">
-
-                <div class="col">
-                <div class=card>
+        <p class="lead-text">client and personal projects</p>
+        <!--  <div class="row">
+                <div class="col"> -->
+                <div class="card-deck">
+                <div class="card mb-4">
                   <a href="#">
-                  <img class="card-img-top" src="images/joshua-tree.jpg" alt="card image top">
+                  <img class="card-img-top img-fluid" src="images/joshua-tree.jpg" alt="card image top">
                   <div class="card-body">
                     <h5 class="card-title">Snake Game</h5>
-                    <p class="card-text">personal javascript mini-game</p>
+                    <p class="card-text">javascript & html canvas in-web snake game</p>
                   </div>
                   </a>
                 </div>
-                </div>
 
-                <div class="col">
-                <div class=card>
+
+                <div class="card mb-4">
                   <a href="#">
-                  <img class="card-img-top" src="images/la-palms.jpg" alt="card image top">
+                  <img class="card-img-top img-fluid" src="images/la-palms.jpg" alt="card image top">
                   <div class="card-body">
                     <h5 class="card-title">Winter Sanctuary</h5>
-                    <p class="card-text">internship for non-profit</p>
+                    <p class="card-text">scheduling software website for non-profit</p>
                   </div>
                   </a>
                 </div>
-                </div>
 
-                <div class="col">
-                <div class=card>
+                <div class="w-100 d-none d-sm-block d-lg-none"> <!-- wrap every 2 on sm and md -->  </div>
+
+                <div class="card mb-4">
                   <a href="#">
-                  <img class="card-img-top" src="images/malibu.jpg" alt="card image top">
+                  <img class="card-img-top img-fluid" src="images/malibu.jpg" alt="card image top">
                   <div class="card-body">
-                    <h5 class="card-title">Public Broadcast US map</h5>
-                    <p class="card-text">journalist research website</p>
+                    <h5 class="card-title">NPR stations US map</h5>
+                    <p class="card-text">interactive map with donation links</p>
                   </div>
                   </a>
                 </div>
-                </div>
 
-              </div>
-              <div class="row mt-4">
+                <div class="w-100 d-none d-lg-block"> <!-- wrap every 3 on lg and xl --> </div>
+              <!-- </div>
+              <div class="row mt-4"> -->
 
-                <div class="col">
-                <div class=card>
+                <div class="card mb-4">
                   <a href="#">
-                  <img class="card-img-top" src="images/lake.jpg" alt="card image top">
+                  <img class="card-img-top img-fluid" src="images/lake.jpg" alt="card image top">
                   <div class="card-body">
                     <h5 class="card-title">Blackjack</h5>
-                    <p class="card-text">personal C++ mini-game</p>
+                    <p class="card-text">C++ game</p>
                   </div>
                   </a>
                 </div>
-                </div>
 
-                <div class="col">
-                <div class=card>
+                <div class="w-100 d-none d-sm-block d-lg-none"> <!-- wrap every 2 on sm and md -->  </div>
+
+
+                <div class="card mb-4">
                   <a href="#">
-                  <img class="card-img-top" src="images/painting.jpg" alt="card image top">
+                  <img class="card-img-top img-fluid" src="images/painting.jpg" alt="card image top">
                   <div class="card-body">
                     <h5 class="card-title">Shakespeare Search</h5>
-                    <p class="card-text">personal C++ project</p>
+                    <p class="card-text">C++ project</p>
                   </div>
                   </a>
                 </div>
-                </div>
 
-                <div class="col">
-                <div class=card>
+                <div class="card mb-4">
                   <a href="#">
-                  <img class="card-img-top" src="images/santaclara.jpg" alt="card image top">
+                  <img class="card-img-top img-fluid" src="images/santaclara.jpg" alt="card image top">
                   <div class="card-body">
                     <h5 class="card-title">Portfolio Website</h5>
-                    <p class="card-text">this one</p>
+                    <p class="card-text">showcasing design and development work</p>
                   </div>
                   </a>
                 </div>
                 </div>
           </div>
           </div>
-        </div>
-      </div>
 
-    <div class="padding bg-light" id="contact">
+
+    <div class="bg-white" id="contact">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Contact</h2>
-            <p>connect with me. <hr>
+            <h2>Contact me</h2>
+            <p> don't hesitate <hr>
               tessneau@gmail.com <br>
               (310) 936 9125</p>
 
@@ -187,8 +182,6 @@
         </div>
       </div>
     </div>
-
-  </div>
 
     <!-- Footer -->
     <footer class="container-fluid text-center">
@@ -218,7 +211,7 @@
       sr.reveal('.landing-text', {
         duration: 6000,
         origin: 'top',
-        delay: 3000,
+        delay: 3000
       });
       sr.reveal('#projects', {
         duration: 4000,
@@ -227,14 +220,15 @@
       sr.reveal('.profile-left', {
           duration: 3000,
           origin:'left',
-          distance:'300px',
+          distance:'200px',
           viewFactor: 0.2
       });
       sr.reveal('.profile-right', {
         duration: 3000,
         origin:'right',
         distance: '200px',
-        viewFactor: 0.2
+        viewFactor: 0.2,
+        delay: 4000
       });
       sr.reveal('#contact', {
         duration: 4000,
@@ -245,7 +239,17 @@
     </script>
 
     <!-- Javascrpt scrollspy -->
-    <script>$('body').scrollspy({ target: '#theNav', offset: 0 })</script>
+    <script>
+  $(document).ready(function() {
+    $('body').scrollspy({target: '#theNav', offset: 60 });
+  });
+
+  $(window).on('activate.bs.scrollspy', function (e,obj) {
+  console.log(obj.relatedTarget);
+  var currentSection = obj.relatedTarget;
+  });
+
+    </script>
 
 
   </body>
