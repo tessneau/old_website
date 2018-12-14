@@ -9,28 +9,41 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- My CSS -->
     <link rel="stylesheet" href="custom.css" >
 
-    <title>TN</title>
+    <!-- Javascript scrollReveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Tess Neau</title>
+
+    <link rel="icon" type="image/ico" href="images/favicon/favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
   </head>
+
   <body>
 
     <!-- Navigation bar -->
-    <nav id="theNav" class="navbar navbar-expand-sm navbar-light fixed-top bg-white" id="mainNav">
-      <div class="container-fluid">
-      <a class="navbar-brand" href="#">Tess Florence Neau</a>
+  <nav id="theNav" class="navbar navbar-expand-sm navbar-overlay fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+      <img id="logo" src="Logo.jpg" width="160" height="88" alt="logo image">
+      </a>
 
       <!-- Button for collapse and mobile device -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- End button -->
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div id="navContent" class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About me</a>
+            <a class="nav-link js-scroll-trigger" href="#profile">Profile</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
@@ -46,18 +59,25 @@
 <div data-spy="scroll" data-target="#theNav">
 
 <div id="home">
-    <div class="landing-text text-white">
-      <h1> Are you </h1>
-      <h3> curious? </h3>
+    <div class="landing-text text-black">
+      <h1> Tess Neau </h1>
     </div>
 </div>
 
-  <div class="padding" id="about">
-    <div class="container-fluid">
+  <div class="padding bg-light" id="profile">
+    <div class="container" >
       <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>About page </h2>
-            <p class="lead">About page lead description </p>
+        <div class="col-3">
+          <div class="profile-left text-center">
+          <img src="images/profile.jpg" class="img-fluid" id="profpic">
+          <p>Tess Florence Neau <br> I'm a 22 year old who was raised on the vibrant beaches of Venice, California and recently have moved to New York to work as a developer.</p>
+          </div>
+        </div>
+        <div class="col-7 offset-1 text-center">
+          <div class="profile-right">
+          <h2> Profile </h2>
+            <p class="lead">Experience in working with software and data with a demonstrated history of working in the computer development industry. Skilled in teamwork, ership, data analysis, strategic planning, and creative problem solving. I'm a scientific brained professional with humanities writing skills and a Bachelor’s Degree focused in Mathematics and Philosophy from Kenyon College. I've been a hard worker since I turned twelve, I'm open-minded, a fast learner and the best listener on this side of town. I'll bring fresh air and a smile into any space I walk into. <br> Add carousel of pictures that represent </p>
+          </div>
           </div>
         </div>
       </div>
@@ -65,21 +85,104 @@
 
     <div class="padding bg-light" id="projects">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Projects</h2>
-            <p class="lead">Turn into a 2 column page - side personal projects and projects for clients</p>
+        <h2>Projects</h2>
+        <p class="lead-text">Projects that I've worked on for clients and on personal time</p>
+
+          <div class="row">
+
+                <div class="col">
+                <div class=card>
+                  <a href="#">
+                  <img class="card-img-top" src="images/joshua-tree.jpg" alt="card image top">
+                  <div class="card-body">
+                    <h5 class="card-title">Snake Game</h5>
+                    <p class="card-text">personal javascript mini-game</p>
+                  </div>
+                  </a>
+                </div>
+                </div>
+
+                <div class="col">
+                <div class=card>
+                  <a href="#">
+                  <img class="card-img-top" src="images/la-palms.jpg" alt="card image top">
+                  <div class="card-body">
+                    <h5 class="card-title">Winter Sanctuary</h5>
+                    <p class="card-text">internship for non-profit</p>
+                  </div>
+                  </a>
+                </div>
+                </div>
+
+                <div class="col">
+                <div class=card>
+                  <a href="#">
+                  <img class="card-img-top" src="images/malibu.jpg" alt="card image top">
+                  <div class="card-body">
+                    <h5 class="card-title">Public Broadcast US map</h5>
+                    <p class="card-text">journalist research website</p>
+                  </div>
+                  </a>
+                </div>
+                </div>
+
+              </div>
+              <div class="row mt-4">
+
+                <div class="col">
+                <div class=card>
+                  <a href="#">
+                  <img class="card-img-top" src="images/lake.jpg" alt="card image top">
+                  <div class="card-body">
+                    <h5 class="card-title">Blackjack</h5>
+                    <p class="card-text">personal C++ mini-game</p>
+                  </div>
+                  </a>
+                </div>
+                </div>
+
+                <div class="col">
+                <div class=card>
+                  <a href="#">
+                  <img class="card-img-top" src="images/painting.jpg" alt="card image top">
+                  <div class="card-body">
+                    <h5 class="card-title">Shakespeare Search</h5>
+                    <p class="card-text">personal C++ project</p>
+                  </div>
+                  </a>
+                </div>
+                </div>
+
+                <div class="col">
+                <div class=card>
+                  <a href="#">
+                  <img class="card-img-top" src="images/santaclara.jpg" alt="card image top">
+                  <div class="card-body">
+                    <h5 class="card-title">Portfolio Website</h5>
+                    <p class="card-text">this one</p>
+                  </div>
+                  </a>
+                </div>
+                </div>
+          </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="padding" id="contact">
+    <div class="padding bg-light" id="contact">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Contact</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+            <p>connect with me. <hr>
+              tessneau@gmail.com <br>
+              (310) 936 9125</p>
+
+            <!-- LinkedIn button -->
+            <a href="https://www.linkedin.com/in/tessneau/" target="_blank" class="li-ic mr-3" role="button"><i class="fa fa-lg fa-linkedin"></i></a>
+
+            <a href="https://github.com/tessneau" target="_blank" class="li-ic mr-3" role="button"><i class="fa fa-lg fa-github"></i></a>
+
           </div>
         </div>
       </div>
@@ -95,15 +198,55 @@
       <!-- /.container -->
     </footer>
 
-
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-    <!-- Scrollspy -->
-    <script>$('body').scrollspy({ target: '#theNav', offset: 100 })</script>
+    <!-- Javascript scrollReveal customizations -->
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal('#logo', {
+        duration:3000,
+        origin: 'bottom'
+      });
+      sr.reveal('#navContent', {
+        duration: 4000,
+        origin: 'bottom',
+        delay: 1000
+      });
+      sr.reveal('.landing-text', {
+        duration: 6000,
+        origin: 'top',
+        delay: 3000,
+      });
+      sr.reveal('#projects', {
+        duration: 4000,
+        origin: 'top'
+      });
+      sr.reveal('.profile-left', {
+          duration: 3000,
+          origin:'left',
+          distance:'300px',
+          viewFactor: 0.2
+      });
+      sr.reveal('.profile-right', {
+        duration: 3000,
+        origin:'right',
+        distance: '200px',
+        viewFactor: 0.2
+      });
+      sr.reveal('#contact', {
+        duration: 4000,
+        viewFactor: 0.2,
+        opacity: 0.2
+      });
+
+    </script>
+
+    <!-- Javascrpt scrollspy -->
+    <script>$('body').scrollspy({ target: '#theNav', offset: 0 })</script>
+
 
   </body>
 </html>
