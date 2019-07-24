@@ -19,9 +19,17 @@ body {
   width: 100%; */
 }
 
+.navbar {
+  background-color: rgb(254, 254, 254);
+  border-bottom-style: solid;
+  border-width: .5px;
+  border-color: rgb(220, 220, 220);
+}
+
 .navbar-overlay {
     margin-bottom: -104px; // Pulls the content under the navbar up by 104px which is the height of your navbar.
     z-index: 1; // Tells the browser that your navbar should be ontop of your content. This allows your links in your navbar to still work when you hover over them.
+    background-color: red;
 }
 
 a, i {
